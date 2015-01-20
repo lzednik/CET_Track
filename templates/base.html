@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %} WPS Medicare CET Tracker {% endblock %} </title>
+
+
+    <link rel="stylesheet" type="text/css" href="/static/css/default.css">
+
+</head>
+<body>
+    <div id="page">
+
+        <div id="sidebar">
+        <img src="/static/images/wps.jpg" alt="WPS logo" />
+
+            {% block sidebar %}
+                something should go here
+            {% endblock %}
+        </div>
+
+        <div id="contents">
+            {% block content %}This is the content area.{% endblock %}
+
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
